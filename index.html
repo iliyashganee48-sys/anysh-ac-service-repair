@@ -1,1222 +1,1200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ANYSH AC SERVICES | AC Service, Repair & Installation</title>
-
-<meta name="description" content="ANYSH AC SERVICES provides professional AC service, repair, installation, maintenance, cleaning, gas charging and cooling problem solutions for inverter, non-inverter, split and window ACs.">
-
-<meta name="theme-color" content="#075985">
-
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial,Helvetica,sans-serif;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  background:#f5f9fc;
-  color:#17202a;
-  line-height:1.6;
-}
-
-a{
-  text-decoration:none;
-  color:inherit;
-}
-
-.container{
-  width:92%;
-  max-width:1180px;
-  margin:auto;
-}
-
-/* HEADER */
-header{
-  background:#ffffff;
-  position:sticky;
-  top:0;
-  z-index:1000;
-  box-shadow:0 2px 15px rgba(0,0,0,.08);
-}
-
-.nav{
-  min-height:70px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:15px;
-}
-
-.logo{
-  font-size:20px;
-  font-weight:800;
-  color:#075985;
-}
-
-.logo span{
-  display:block;
-  font-size:11px;
-  color:#64748b;
-  letter-spacing:1px;
-}
-
-.nav-buttons{
-  display:flex;
-  gap:8px;
-}
-
-.nav-btn{
-  padding:10px 14px;
-  border-radius:25px;
-  font-size:13px;
-  font-weight:bold;
-}
-
-.call{
-  background:#075985;
-  color:white;
-}
-
-.whatsapp{
-  background:#16a34a;
-  color:white;
-}
-
-/* HERO */
-.hero{
-  min-height:650px;
-  display:flex;
-  align-items:center;
-  color:white;
-  background:
-  linear-gradient(90deg,rgba(2,20,35,.92),rgba(2,20,35,.55)),
-  url("https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1600&q=85")
-  center/cover;
-}
-
-.hero-content{
-  max-width:720px;
-  padding:70px 0;
-}
-
-.badge{
-  display:inline-block;
-  background:rgba(255,255,255,.15);
-  border:1px solid rgba(255,255,255,.3);
-  padding:8px 15px;
-  border-radius:30px;
-  font-size:13px;
-  margin-bottom:20px;
-}
-
-.hero h1{
-  font-size:52px;
-  line-height:1.08;
-  margin-bottom:20px;
-}
-
-.hero h1 span{
-  color:#38bdf8;
-}
-
-.hero p{
-  font-size:19px;
-  color:#e2e8f0;
-  margin-bottom:30px;
-}
-
-.hero-buttons{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-}
-
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:14px 22px;
-  border-radius:8px;
-  font-weight:bold;
-  border:none;
-  cursor:pointer;
-}
-
-.btn-primary{
-  background:#16a34a;
-  color:white;
-}
-
-.btn-secondary{
-  background:white;
-  color:#075985;
-}
-
-/* SECTIONS */
-section{
-  padding:75px 0;
-}
-
-.section-title{
-  text-align:center;
-  margin-bottom:45px;
-}
-
-.section-title small{
-  color:#0284c7;
-  font-weight:bold;
-  text-transform:uppercase;
-  letter-spacing:1.5px;
-}
-
-.section-title h2{
-  font-size:36px;
-  margin:8px 0;
-  color:#0f172a;
-}
-
-.section-title p{
-  max-width:650px;
-  margin:auto;
-  color:#64748b;
-}
-
-/* SERVICE CARDS */
-.services{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.service-card{
-  background:white;
-  border-radius:16px;
-  overflow:hidden;
-  box-shadow:0 5px 22px rgba(15,23,42,.08);
-  border:1px solid #e2e8f0;
-  transition:.25s;
-}
-
-.service-card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 12px 30px rgba(15,23,42,.13);
-}
-
-.service-img{
-  width:100%;
-  height:190px;
-  object-fit:cover;
-}
-
-.service-body{
-  padding:20px;
-}
-
-.service-icon{
-  font-size:28px;
-}
-
-.service-body h3{
-  margin:7px 0;
-  font-size:20px;
-}
-
-.service-body p{
-  color:#64748b;
-  font-size:14px;
-  margin-bottom:16px;
-}
-
-.book-btn{
-  display:block;
-  width:100%;
-  background:#16a34a;
-  color:white;
-  text-align:center;
-  padding:12px;
-  border-radius:8px;
-  font-weight:bold;
-}
-
-/* TYPES */
-.types{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
-}
-
-.type-card{
-  background:white;
-  padding:25px 15px;
-  text-align:center;
-  border-radius:14px;
-  box-shadow:0 5px 20px rgba(0,0,0,.06);
-}
-
-.type-card .emoji{
-  font-size:40px;
-}
-
-.type-card h3{
-  margin-top:10px;
-  color:#075985;
-}
-
-/* WORK */
-.work-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-
-.work-grid img{
-  width:100%;
-  height:250px;
-  object-fit:cover;
-  border-radius:15px;
-  box-shadow:0 5px 18px rgba(0,0,0,.1);
-}
-
-/* WHY */
-.why{
-  background:#e0f2fe;
-}
-
-.why-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.why-card{
-  background:white;
-  padding:25px;
-  border-radius:14px;
-}
-
-.why-card strong{
-  display:block;
-  font-size:18px;
-  color:#075985;
-  margin-bottom:5px;
-}
-
-/* BOOK */
-.booking{
-  background:
-  linear-gradient(100deg,#075985,#0284c7);
-  color:white;
-  text-align:center;
-}
-
-.booking h2{
-  font-size:38px;
-  margin-bottom:12px;
-}
-
-.booking p{
-  color:#e0f2fe;
-  max-width:650px;
-  margin:0 auto 25px;
-}
-
-.big-whatsapp{
-  display:inline-block;
-  background:#16a34a;
-  color:white;
-  padding:16px 30px;
-  border-radius:9px;
-  font-size:17px;
-  font-weight:bold;
-}
-
-/* FAQ */
-.faq{
-  max-width:850px;
-  margin:auto;
-}
-
-details{
-  background:white;
-  margin-bottom:12px;
-  padding:18px 20px;
-  border-radius:10px;
-  box-shadow:0 3px 15px rgba(0,0,0,.05);
-}
-
-summary{
-  cursor:pointer;
-  font-weight:bold;
-  color:#075985;
-}
-
-/* FOOTER */
-footer{
-  background:#0f172a;
-  color:#cbd5e1;
-  padding:45px 0 90px;
-}
-
-.footer-grid{
-  display:grid;
-  grid-template-columns:2fr 1fr 1fr;
-  gap:30px;
-}
-
-footer h3{
-  color:white;
-  margin-bottom:12px;
-}
-
-footer a{
-  display:block;
-  margin:7px 0;
-  color:#cbd5e1;
-}
-
-.copyright{
-  border-top:1px solid #334155;
-  margin-top:30px;
-  padding-top:20px;
-  text-align:center;
-  font-size:13px;
-}
-
-/* MOBILE BAR */
-.mobile-bar{
-  position:fixed;
-  bottom:0;
-  left:0;
-  width:100%;
-  z-index:9999;
-  display:flex;
-  background:white;
-  box-shadow:0 -3px 15px rgba(0,0,0,.15);
-}
-
-.mobile-bar a{
-  width:50%;
-  text-align:center;
-  padding:15px;
-  font-weight:bold;
-}
-
-.mobile-call{
-  background:#075985;
-  color:white;
-}
-
-.mobile-wa{
-  background:#16a34a;
-  color:white;
-}
-
-/* MOBILE */
-@media(max-width:850px){
-
-  .hero{
-    min-height:600px;
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ANYSH AC SERVICES | AC Service, Repair & Installation</title>
+
+  <meta name="description" content="ANYSH AC SERVICES provides professional Split AC, Window AC, Inverter AC and Non-Inverter AC service, repair, installation, gas filling, cleaning, PCB repair and maintenance.">
+  <meta name="keywords" content="AC service, AC repair, AC installation, AC gas filling, AC cleaning, PCB repair, Split AC service, Window AC service, Inverter AC service, ANYSH AC SERVICES">
+  <meta name="author" content="ANYSH AC SERVICES">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#061426">
+
+  <!-- Google Search Console:
+       Replace the line below with YOUR REAL verification code.
+       Do not use a fake code.
+  -->
+  <!-- <meta name="google-site-verification" content="YOUR-REAL-CODE-HERE"> -->
+
+  <!-- Social sharing -->
+  <meta property="og:title" content="ANYSH AC SERVICES | AC Service & Repair">
+  <meta property="og:description" content="Professional AC service, repair, installation, gas filling, cleaning and maintenance.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="2594.jpg">
+
+  <link rel="preload" as="image" href="2594.jpg">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f8fc;
+      color: #152033;
+      line-height: 1.6;
+      padding-bottom: 70px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(5, 18, 35, 0.97);
+      color: white;
+      box-shadow: 0 4px 20px rgba(0,0,0,.18);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 21px;
+      font-weight: 900;
+      letter-spacing: .5px;
+    }
+
+    .brand span {
+      display: block;
+      color: #55d6ff;
+      font-size: 11px;
+      letter-spacing: 2px;
+      margin-top: 2px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 9px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 7px;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 800;
+      border: 0;
+      cursor: pointer;
+      transition: .25s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .call {
+      background: white;
+      color: #061426;
+    }
+
+    .whatsapp {
+      background: #16c96b;
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 650px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(3,16,32,.92), rgba(3,16,32,.68), rgba(3,16,32,.30)),
+        url("2594.jpg") center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      padding: 85px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(72,210,255,.16);
+      border: 1px solid rgba(130,230,255,.45);
+      color: #a9edff;
+      padding: 8px 14px;
+      border-radius: 50px;
+      font-weight: 800;
+      margin-bottom: 18px;
+      font-size: 13px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 70px);
+      line-height: 1.03;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #56dfff;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 650px;
+      color: #e7f3fb;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-buttons .btn {
+      padding: 15px 22px;
+    }
+
+    /* SECTION */
+    section {
+      padding: 75px 0;
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 40px;
+    }
+
+    .section-head .small {
+      color: #008fc4;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(30px, 4vw, 44px);
+      margin: 8px 0 12px;
+      color: #07182b;
+    }
+
+    .section-head p {
+      color: #607080;
+    }
+
+    /* AC TYPES */
+    .types {
+      background: white;
+    }
+
+    .type-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .type-card {
+      background: linear-gradient(145deg, #07192d, #0b2944);
+      color: white;
+      padding: 28px 20px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 12px 30px rgba(0,30,60,.12);
+      transition: .25s;
+    }
+
+    .type-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .type-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .type-card h3 {
+      font-size: 19px;
+      margin-bottom: 7px;
+    }
+
+    .type-card p {
+      color: #c9e1ef;
+      font-size: 14px;
+    }
+
+    /* SERVICES */
+    .services {
+      background: #f4f8fc;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(15,40,70,.09);
+      border: 1px solid #e5edf4;
+      transition: .25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 35px rgba(15,40,70,.15);
+    }
+
+    .service-img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .service-body {
+      padding: 20px;
+    }
+
+    .service-body h3 {
+      color: #07182b;
+      margin-bottom: 7px;
+      font-size: 20px;
+    }
+
+    .service-body p {
+      color: #687887;
+      font-size: 14px;
+      min-height: 45px;
+      margin-bottom: 16px;
+    }
+
+    .service-book {
+      width: 100%;
+      background: #16c96b;
+      color: white;
+      padding: 12px;
+      border-radius: 9px;
+      display: flex;
+      justify-content: center;
+      font-weight: 900;
+      transition: .2s;
+    }
+
+    .service-book:hover {
+      background: #0da957;
+    }
+
+    /* WHY US */
+    .why {
+      background: white;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .why-card {
+      padding: 28px 20px;
+      border: 1px solid #e2eaf1;
+      border-radius: 16px;
+      text-align: center;
+      background: #fff;
+    }
+
+    .why-card .icon {
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .why-card h3 {
+      margin-bottom: 7px;
+    }
+
+    .why-card p {
+      font-size: 14px;
+      color: #697988;
+    }
+
+    /* GALLERY */
+    .gallery {
+      background: #07182b;
+      color: white;
+    }
+
+    .gallery .section-head h2 {
+      color: white;
+    }
+
+    .gallery .section-head p {
+      color: #c5d6e4;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .gallery-item {
+      height: 260px;
+      overflow: hidden;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.12);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .4s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    /* BOOKING */
+    .booking {
+      background: linear-gradient(135deg, #e8f8ff, #ffffff);
+    }
+
+    .booking-box {
+      max-width: 900px;
+      margin: auto;
+      background: #07182b;
+      color: white;
+      padding: 45px;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0,30,60,.16);
+    }
+
+    .booking-box h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      margin-bottom: 12px;
+    }
+
+    .booking-box p {
+      color: #c7d9e6;
+      margin-bottom: 25px;
+    }
+
+    .booking-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* FAQ */
+    .faq {
+      background: white;
+    }
+
+    .faq-list {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    details {
+      background: #f5f9fc;
+      margin-bottom: 12px;
+      border-radius: 12px;
+      padding: 18px 20px;
+      border: 1px solid #e1eaf1;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 900;
+      color: #07182b;
+    }
+
+    details p {
+      color: #657687;
+      padding-top: 12px;
+      font-size: 15px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #030d19;
+      color: white;
+      padding: 45px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 35px;
+    }
+
+    footer h3 {
+      margin-bottom: 12px;
+    }
+
+    footer p,
+    footer a {
+      color: #afc1d0;
+      font-size: 14px;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      margin-top: 35px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.1);
+      text-align: center;
+      color: #8fa3b3;
+      font-size: 13px;
+    }
+
+    /* MOBILE STICKY */
+    .mobile-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2000;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: white;
+      box-shadow: 0 -5px 20px rgba(0,0,0,.15);
+    }
+
+    .mobile-bar a {
+      padding: 16px;
+      text-align: center;
+      font-weight: 900;
+    }
+
+    .mobile-call {
+      background: #07182b;
+      color: white;
+    }
+
+    .mobile-wa {
+      background: #16c96b;
+      color: white;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .type-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+      body {
+        padding-bottom: 65px;
+      }
+
+      .nav {
+        min-height: 64px;
+      }
+
+      .brand {
+        font-size: 17px;
+      }
+
+      .nav-buttons {
+        display: none;
+      }
+
+      .hero {
+        min-height: 610px;
+      }
+
+      .hero-content {
+        padding: 70px 0;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .hero-buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .type-grid,
+      .service-grid,
+      .why-grid,
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item {
+        height: 260px;
+      }
+
+      section {
+        padding: 55px 0;
+      }
+
+      .booking-box {
+        padding: 30px 20px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 651px) {
+      .mobile-bar {
+        display: none;
+      }
+    }
+  </style>
+
+  <!-- SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ANYSH AC SERVICES",
+    "telephone": "+918208328370",
+    "image": [
+      "2594.jpg",
+      "2595.jpg",
+      "2596.jpg",
+      "2597.jpg"
+    ],
+    "description": "Professional AC service, repair, installation, cleaning, gas filling, PCB repair and maintenance.",
+    "serviceType": [
+      "AC Service",
+      "AC Repair",
+      "AC Installation",
+      "AC Gas Filling",
+      "AC Cleaning",
+      "AC PCB Repair",
+      "AC Maintenance"
+    ]
   }
-
-  .hero h1{
-    font-size:39px;
-  }
-
-  .services{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .types{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .work-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .why-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr 1fr;
-  }
-}
-
-@media(max-width:560px){
-
-  .nav{
-    min-height:62px;
-  }
-
-  .logo{
-    font-size:16px;
-  }
-
-  .logo span{
-    font-size:9px;
-  }
-
-  .nav-btn{
-    padding:8px 10px;
-    font-size:11px;
-  }
-
-  .hero{
-    min-height:650px;
-  }
-
-  .hero h1{
-    font-size:37px;
-  }
-
-  .hero p{
-    font-size:16px;
-  }
-
-  section{
-    padding:55px 0;
-  }
-
-  .section-title h2{
-    font-size:29px;
-  }
-
-  .services{
-    grid-template-columns:1fr;
-  }
-
-  .types{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .work-grid{
-    grid-template-columns:1fr;
-  }
-
-  .why-grid{
-    grid-template-columns:1fr;
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr;
-  }
-
-  .mobile-bar{
-    display:flex;
-  }
-
-  body{
-    padding-bottom:58px;
-  }
-}
-</style>
+  </script>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-  <div class="container nav">
-
-    <div class="logo">
-      ANYSH AC SERVICES
-      <span>AC SERVICE • REPAIR • INSTALLATION</span>
-    </div>
-
-    <div class="nav-buttons">
-      <a class="nav-btn call" href="tel:+918208328370">📞 Call</a>
-
-      <a class="nav-btn whatsapp"
-      href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20an%20AC%20service.%20Please%20share%20availability."
-      target="_blank">
-      💬 WhatsApp
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+      <a href="#" class="brand">
+        ANYSH AC SERVICES
+        <span>AC SERVICE • REPAIR • INSTALLATION</span>
       </a>
+
+      <div class="nav-buttons">
+        <a class="btn call" href="tel:+918208328370">📞 Call Now</a>
+        <a class="btn whatsapp"
+           href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20an%20AC%20service."
+           target="_blank">
+          💬 WhatsApp
+        </a>
+      </div>
     </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="badge">❄️ PROFESSIONAL AC SERVICE & REPAIR</div>
+
+        <h1>
+          AC Service & Repair
+          <span>You Can Trust</span>
+        </h1>
+
+        <p>
+          Professional AC service, repair, installation, gas checking,
+          cleaning, PCB repair and maintenance for Split, Window,
+          Inverter and Non-Inverter ACs.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn whatsapp"
+             href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20an%20AC%20service."
+             target="_blank">
+            💬 Book on WhatsApp
+          </a>
+
+          <a class="btn call" href="tel:+918208328370">
+            📞 Call 82083 28370
+          </a>
+
+          <a class="btn"
+             href="#services"
+             style="background:#ffffff;color:#07182b;">
+            🔧 View Services
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AC TYPES -->
+  <section class="types">
+    <div class="container">
+
+      <div class="section-head">
+        <div class="small">AC SPECIALISTS</div>
+        <h2>We Service All Major AC Types</h2>
+        <p>
+          Professional service and troubleshooting for different types
+          of residential and commercial AC systems.
+        </p>
+      </div>
+
+      <div class="type-grid">
+
+        <div class="type-card">
+          <div class="type-icon">❄️</div>
+          <h3>Split AC</h3>
+          <p>Service, repair, installation and maintenance.</p>
+        </div>
+
+        <div class="type-card">
+          <div class="type-icon">🌀</div>
+          <h3>Window AC</h3>
+          <p>Cleaning, cooling checks, repair and maintenance.</p>
+        </div>
+
+        <div class="type-card">
+          <div class="type-icon">⚡</div>
+          <h3>Inverter AC</h3>
+          <p>PCB, sensor, compressor and inverter fault checking.</p>
+        </div>
+
+        <div class="type-card">
+          <div class="type-icon">🔧</div>
+          <h3>Non-Inverter AC</h3>
+          <p>Complete service, repair and cooling solutions.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+
+    <div class="container">
+
+      <div class="section-head">
+        <div class="small">OUR SERVICES</div>
+        <h2>Book the Service You Need</h2>
+        <p>
+          Every service has its own WhatsApp booking button.
+          Just select your problem and send your request.
+        </p>
+      </div>
+
+      <div class="service-grid">
+
+        <!-- 1 -->
+        <article class="service-card">
+          <img src="2594.jpg" class="service-img" alt="AC technician performing normal AC service" loading="lazy">
+          <div class="service-body">
+            <h3>Normal AC Service</h3>
+            <p>Regular AC cleaning and basic performance checking.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20Normal%20AC%20Service." target="_blank">💬 Book Normal Service</a>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="service-card">
+          <img src="2595.jpg" class="service-img" alt="AC filter cleaning service" loading="lazy">
+          <div class="service-body">
+            <h3>Filter Cleaning</h3>
+            <p>Cleaning of AC filters to improve airflow and cooling.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20AC%20Filter%20Cleaning." target="_blank">💬 Book Filter Cleaning</a>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="service-card">
+          <img src="2596.jpg" class="service-img" alt="AC performance checking" loading="lazy">
+          <div class="service-body">
+            <h3>Performance Check</h3>
+            <p>Check cooling, airflow and overall AC performance.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20AC%20Performance%20Check." target="_blank">💬 Book Performance Check</a>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="service-card">
+          <img src="2597.jpg" class="service-img" alt="AC deep jet cleaning service" loading="lazy">
+          <div class="service-body">
+            <h3>Jet / Deep Cleaning</h3>
+            <p>Deep cleaning for heavily dirty AC indoor units.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20AC%20Jet%20Deep%20Cleaning." target="_blank">💬 Book Jet Cleaning</a>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="service-card">
+          <img src="2594.jpg" class="service-img" alt="AC repair service" loading="lazy">
+          <div class="service-body">
+            <h3>AC Repair</h3>
+            <p>Diagnosis and repair for different AC faults.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20need%20AC%20Repair.%20Please%20share%20availability." target="_blank">💬 Book AC Repair</a>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="service-card">
+          <img src="2595.jpg" class="service-img" alt="AC installation service" loading="lazy">
+          <div class="service-body">
+            <h3>AC Installation</h3>
+            <p>Professional Split and Window AC installation.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20AC%20Installation.%20Please%20share%20details." target="_blank">💬 Book Installation</a>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="service-card">
+          <img src="2596.jpg" class="service-img" alt="AC uninstallation service" loading="lazy">
+          <div class="service-body">
+            <h3>AC Uninstallation</h3>
+            <p>Safe AC removal before shifting or replacement.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20AC%20Uninstallation." target="_blank">💬 Book Uninstallation</a>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="service-card">
+          <img src="2597.jpg" class="service-img" alt="AC gas checking service" loading="lazy">
+          <div class="service-body">
+            <h3>Gas Checking</h3>
+            <p>AC refrigerant pressure and cooling condition checking.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20AC%20Gas%20Checking." target="_blank">💬 Book Gas Checking</a>
+          </div>
+        </article>
+
+        <!-- 9 -->
+        <article class="service-card">
+          <img src="2594.jpg" class="service-img" alt="AC gas filling service" loading="lazy">
+          <div class="service-body">
+            <h3>Gas Filling / Charging</h3>
+            <p>Refrigerant charging after proper diagnosis and checking.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20AC%20Gas%20Filling%20or%20Gas%20Charging." target="_blank">💬 Book Gas Filling</a>
+          </div>
+        </article>
+
+        <!-- 10 -->
+        <article class="service-card">
+          <img src="2595.jpg" class="service-img" alt="AC gas leakage checking" loading="lazy">
+          <div class="service-body">
+            <h3>Gas Leakage Checking</h3>
+            <p>Checking for refrigerant leakage and related problems.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20have%20an%20AC%20gas%20leakage%20problem.%20I%20want%20to%20book%20leakage%20checking." target="_blank">💬 Book Leakage Check</a>
+          </div>
+        </article>
+
+        <!-- 11 -->
+        <article class="service-card">
+          <img src="2596.jpg" class="service-img" alt="AC cooling problem repair" loading="lazy">
+          <div class="service-body">
+            <h3>Cooling Problem</h3>
+            <p>Diagnosis for weak cooling or AC not cooling.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20my%20AC%20is%20not%20cooling.%20I%20want%20to%20book%20a%20cooling%20check." target="_blank">💬 Book Cooling Check</a>
+          </div>
+        </article>
+
+        <!-- 12 -->
+        <article class="service-card">
+          <img src="2597.jpg" class="service-img" alt="AC water leakage repair" loading="lazy">
+          <div class="service-body">
+            <h3>Water Leakage</h3>
+            <p>Diagnosis of indoor water leakage and drainage issues.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20my%20AC%20has%20a%20water%20leakage%20problem.%20I%20want%20to%20book%20a%20service." target="_blank">💬 Book Water Leakage</a>
+          </div>
+        </article>
+
+        <!-- 13 -->
+        <article class="service-card">
+          <img src="2594.jpg" class="service-img" alt="AC electrical checking service" loading="lazy">
+          <div class="service-body">
+            <h3>Electrical Checking</h3>
+            <p>Electrical connections and AC electrical fault diagnosis.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20AC%20Electrical%20Checking." target="_blank">💬 Book Electrical Check</a>
+          </div>
+        </article>
+
+        <!-- 14 -->
+        <article class="service-card">
+          <img src="2595.jpg" class="service-img" alt="AC PCB repair service" loading="lazy">
+          <div class="service-body">
+            <h3>PCB Repair</h3>
+            <p>AC control PCB fault checking and repair service.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20need%20AC%20PCB%20Repair.%20Please%20share%20availability." target="_blank">💬 Book PCB Repair</a>
+          </div>
+        </article>
+
+        <!-- 15 -->
+        <article class="service-card">
+          <img src="2596.jpg" class="service-img" alt="AC fan motor repair service" loading="lazy">
+          <div class="service-body">
+            <h3>Fan Motor Repair</h3>
+            <p>Indoor and outdoor fan motor checking and repair.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20have%20an%20AC%20fan%20motor%20problem.%20I%20want%20to%20book%20a%20checking." target="_blank">💬 Book Fan Motor Check</a>
+          </div>
+        </article>
+
+        <!-- 16 -->
+        <article class="service-card">
+          <img src="2597.jpg" class="service-img" alt="AC compressor problem diagnosis" loading="lazy">
+          <div class="service-body">
+            <h3>Compressor Problem</h3>
+            <p>Compressor starting, running and electrical diagnosis.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20have%20an%20AC%20compressor%20problem.%20I%20want%20to%20book%20a%20checking." target="_blank">💬 Book Compressor Check</a>
+          </div>
+        </article>
+
+        <!-- 17 -->
+        <article class="service-card">
+          <img src="2594.jpg" class="service-img" alt="AC capacitor replacement" loading="lazy">
+          <div class="service-body">
+            <h3>Capacitor Replacement</h3>
+            <p>Capacitor checking and replacement when required.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20need%20AC%20Capacitor%20Checking%20or%20Replacement." target="_blank">💬 Book Capacitor Check</a>
+          </div>
+        </article>
+
+        <!-- 18 -->
+        <article class="service-card">
+          <img src="2595.jpg" class="service-img" alt="AC sensor checking service" loading="lazy">
+          <div class="service-body">
+            <h3>Sensor Checking</h3>
+            <p>Checking temperature sensors and related faults.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20AC%20Sensor%20Checking." target="_blank">💬 Book Sensor Check</a>
+          </div>
+        </article>
+
+        <!-- 19 -->
+        <article class="service-card">
+          <img src="2596.jpg" class="service-img" alt="AC drain pipe cleaning" loading="lazy">
+          <div class="service-body">
+            <h3>Drain Pipe Cleaning</h3>
+            <p>Cleaning blocked AC drain pipes and drainage lines.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20AC%20Drain%20Pipe%20Cleaning." target="_blank">💬 Book Drain Cleaning</a>
+          </div>
+        </article>
+
+        <!-- 20 -->
+        <article class="service-card">
+          <img src="2597.jpg" class="service-img" alt="AC maintenance service" loading="lazy">
+          <div class="service-body">
+            <h3>AC Maintenance</h3>
+            <p>Regular maintenance to help keep your AC working properly.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20regular%20AC%20Maintenance." target="_blank">💬 Book Maintenance</a>
+          </div>
+        </article>
+
+        <!-- 21 -->
+        <article class="service-card">
+          <img src="2594.jpg" class="service-img" alt="AC master deep cleaning" loading="lazy">
+          <div class="service-body">
+            <h3>Master Deep Cleaning</h3>
+            <p>Detailed cleaning for AC units requiring deeper maintenance.</p>
+            <a class="service-book" href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20Master%20Deep%20Cleaning." target="_blank">💬 Book Deep Cleaning</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="why">
+
+    <div class="container">
+
+      <div class="section-head">
+        <div class="small">WHY CHOOSE US</div>
+        <h2>Professional AC Care</h2>
+        <p>
+          From routine cleaning to technical troubleshooting,
+          choose the service that matches your AC problem.
+        </p>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card">
+          <div class="icon">🔧</div>
+          <h3>AC Repair</h3>
+          <p>Fault diagnosis and repair for different AC problems.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="icon">❄️</div>
+          <h3>Cooling Care</h3>
+          <p>Cooling and performance related checks.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="icon">⚡</div>
+          <h3>Electrical & PCB</h3>
+          <p>Electrical, PCB, sensor and component checking.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="icon">💬</div>
+          <h3>Easy Booking</h3>
+          <p>Choose a service and contact directly through WhatsApp.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+
+    <div class="container">
+
+      <div class="section-head">
+        <div class="small">OUR WORK</div>
+        <h2>AC Service Gallery</h2>
+        <p>
+          AC service, repair and installation work.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <img src="2594.jpg"
+               alt="ANYSH AC SERVICES technician working on air conditioner"
+               loading="lazy">
+        </div>
+
+        <div class="gallery-item">
+          <img src="2595.jpg"
+               alt="ANYSH AC SERVICES AC repair work"
+               loading="lazy">
+        </div>
+
+        <div class="gallery-item">
+          <img src="2596.jpg"
+               alt="ANYSH AC SERVICES AC installation and service work"
+               loading="lazy">
+        </div>
+
+        <div class="gallery-item">
+          <img src="2597.jpg"
+               alt="ANYSH AC SERVICES professional air conditioner service"
+               loading="lazy">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking">
+
+    <div class="container">
+
+      <div class="booking-box">
+
+        <h2>Need AC Service?</h2>
+
+        <p>
+          Tell us your AC problem on WhatsApp or call directly.
+          Select a service above for a pre-filled WhatsApp message.
+        </p>
+
+        <div class="booking-actions">
+
+          <a class="btn whatsapp"
+             href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20need%20AC%20service.%20Please%20share%20availability."
+             target="_blank">
+            💬 WhatsApp ANYSH
+          </a>
+
+          <a class="btn call" href="tel:+918208328370">
+            📞 Call 82083 28370
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+
+    <div class="container">
+
+      <div class="section-head">
+        <div class="small">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <details>
+          <summary>Which AC types do you service?</summary>
+          <p>
+            ANYSH AC SERVICES provides service and repair for Split AC,
+            Window AC, Inverter AC and Non-Inverter AC.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can I book AC service through WhatsApp?</summary>
+          <p>
+            Yes. Select any service button on this website and WhatsApp
+            will open with a pre-filled service request.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do you provide AC gas checking and gas filling?</summary>
+          <p>
+            Gas checking, leakage checking and gas charging services
+            are available according to the AC problem and requirement.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do you repair AC PCB and electrical problems?</summary>
+          <p>
+            PCB and electrical checking services are available for
+            suitable AC faults.
+          </p>
+        </details>
+
+        <details>
+          <summary>My AC is not cooling. What should I do?</summary>
+          <p>
+            Use the Cooling Problem button above to send a direct
+            WhatsApp request for an AC cooling check.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <h3>ANYSH AC SERVICES</h3>
+          <p>
+            Professional AC service, repair, installation, cleaning,
+            gas checking, PCB repair and maintenance.
+          </p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <p><a href="#services">AC Services</a></p>
+          <p><a href="#services">AC Repair</a></p>
+          <p><a href="#services">AC Installation</a></p>
+          <p><a href="#services">Gas Filling</a></p>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <p>📞 <a href="tel:+918208328370">+91 82083 28370</a></p>
+          <p style="margin-top:8px;">
+            💬 <a href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20need%20AC%20service." target="_blank">WhatsApp</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        © <span id="year"></span> ANYSH AC SERVICES. All Rights Reserved.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- MOBILE CALL + WHATSAPP -->
+  <div class="mobile-bar">
+
+    <a class="mobile-call" href="tel:+918208328370">
+      📞 CALL
+    </a>
+
+    <a class="mobile-wa"
+       href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20need%20AC%20service.%20Please%20share%20availability."
+       target="_blank">
+      💬 WHATSAPP
+    </a>
 
   </div>
-</header>
 
-
-<!-- HERO -->
-<section class="hero">
-
-  <div class="container hero-content">
-
-    <div class="badge">
-      🇮🇳 Professional AC Service & Repair
-    </div>
-
-    <h1>
-      Expert AC <span>Service, Repair</span> & Installation
-    </h1>
-
-    <p>
-      Professional service for Inverter AC, Non-Inverter AC,
-      Split AC, Window AC and residential air-conditioning systems.
-    </p>
-
-    <div class="hero-buttons">
-
-      <a class="btn btn-primary"
-      href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20an%20AC%20service.%20Please%20share%20availability."
-      target="_blank">
-      💬 Book on WhatsApp
-      </a>
-
-      <a class="btn btn-secondary"
-      href="tel:+918208328370">
-      📞 Call Now
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- SERVICES -->
-<section id="services">
-
-<div class="container">
-
-<div class="section-title">
-<small>Our Services</small>
-<h2>Complete AC Services</h2>
-<p>
-From regular cleaning to complex AC repair, installation,
-gas charging and maintenance.
-</p>
-</div>
-
-
-<div class="services">
-
-
-<!-- SERVICE 1 -->
-<div class="service-card">
-
-<img class="service-img"
-src="https://images.unsplash.com/photo-1581092919535-7146ff1a5906?auto=format&fit=crop&w=900&q=80"
-alt="AC technician working">
-
-<div class="service-body">
-
-<div class="service-icon">❄️</div>
-
-<h3>Normal AC Service</h3>
-
-<p>
-Complete basic AC servicing to maintain cooling,
-airflow and overall performance.
-</p>
-
-<a class="book-btn"
-href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20Normal%20AC%20Service."
-target="_blank">
-Book Normal Service
-</a>
-
-</div>
-</div>
-
-
-<!-- SERVICE 2 -->
-<div class="service-card">
-
-<img class="service-img"
-src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=80"
-alt="AC cleaning">
-
-<div class="service-body">
-
-<div class="service-icon">🧼</div>
-
-<h3>Filter Cleaning</h3>
-
-<p>
-Professional filter cleaning for better airflow,
-cleaner air and improved AC performance.
-</p>
-
-<a class="book-btn"
-href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20AC%20Filter%20Cleaning."
-target="_blank">
-Book Filter Cleaning
-</a>
-
-</div>
-</div>
-
-
-<!-- SERVICE 3 -->
-<div class="service-card">
-
-<img class="service-img"
-src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80"
-alt="AC performance checking">
-
-<div class="service-body">
-
-<div class="service-icon">✔️</div>
-
-<h3>Performance Check</h3>
-
-<p>
-Cooling, airflow, electrical and general AC performance
-checking.
-</p>
-
-<a class="book-btn"
-href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20an%20AC%20Performance%20Check."
-target="_blank">
-Book Performance Check
-</a>
-
-</div>
-</div>
-
-
-<!-- SERVICE 4 -->
-<div class="service-card">
-
-<img class="service-img"
-src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=900&q=80"
-alt="AC deep cleaning">
-
-<div class="service-body">
-
-<div class="service-icon">💦</div>
-
-<h3>Jet / Deep Cleaning</h3>
-
-<p>
-Deep cleaning of indoor AC unit, filters, coil and
-drain area.
-</p>
-
-<a class="book-btn"
-href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20AC%20Jet%20or%20Deep%20Cleaning."
-target="_blank">
-Book Jet Service
-</a>
-
-</div>
-</div>
-
-
-<!-- SERVICE 5 -->
-<div class="service-card">
-
-<img class="service-img"
-src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80"
-alt="AC repair technician">
-
-<div class="service-body">
-
-<div class="service-icon">🔧</div>
-
-<h3>AC Repair</h3>
-
-<p>
-Diagnosis and repair for cooling, electrical,
-fan, compressor and other AC problems.
-</p>
-
-<a class="book-btn"
-href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20need%20AC%20Repair.%20Please%20share%20availability."
-target="_blank">
-Book AC Repair
-</a>
-
-</div>
-</div>
-
-
-<!-- SERVICE 6 -->
-<div class="service-card">
-
-<img class="service-img"
-src="https://images.unsplash.com/photo-1597008641621-ceb9a5b1c3ef?auto=format&fit=crop&w=900&q=80"
-alt="AC installation">
-
-<div class="service-body">
-
-<div class="service-icon">🏠</div>
-
-<h3>AC Installation</h3>
-
-<p>
-Professional Split AC and Window AC installation
-for residential and commercial locations.
-</p>
-
-<a class="book-btn"
-href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20AC%20Installation.%20Please%20share%20details."
-target="_blank">
-Book Installation
-</a>
-
-</div>
-</div>
-
-
-<!-- SERVICE 7 -->
-<div class="service-card">
-
-<img class="service-img"
-src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80"
-alt="AC gas charging">
-
-<div class="service-body">
-
-<div class="service-icon">🧊</div>
-
-<h3>Gas Filling / Charging</h3>
-
-<p>
-AC gas pressure checking and refrigerant charging
-when required after proper diagnosis.
-</p>
-
-<a class="book-btn"
-href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20AC%20Gas%20Checking%20and%20Charging."
-target="_blank">
-Book Gas Service
-</a>
-
-</div>
-</div>
-
-
-<!-- SERVICE 8 -->
-<div class="service-card">
-
-<img class="service-img"
-src="https://images.unsplash.com/photo-1621905252472-e8c1d4f7a3c5?auto=format&fit=crop&w=900&q=80"
-alt="AC electrical repair">
-
-<div class="service-body">
-
-<div class="service-icon">⚡</div>
-
-<h3>Electrical Checking</h3>
-
-<p>
-Electrical connections, voltage, wiring and AC
-electrical components checked properly.
-</p>
-
-<a class="book-btn"
-href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20AC%20Electrical%20Checking."
-target="_blank">
-Book Electrical Check
-</a>
-
-</div>
-</div>
-
-
-<!-- SERVICE 9 -->
-<div class="service-card">
-
-<img class="service-img"
-src="https://images.unsplash.com/photo-1581093458791-9d42e3c6a5c7?auto=format&fit=crop&w=900&q=80"
-alt="AC PCB repair">
-
-<div class="service-body">
-
-<div class="service-icon">🔌</div>
-
-<h3>PCB Repair</h3>
-
-<p>
-AC PCB diagnosis and repair for suitable electrical
-and control-board faults.
-</p>
-
-<a class="book-btn"
-href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20need%20AC%20PCB%20Repair.%20Please%20share%20availability."
-target="_blank">
-Book PCB Repair
-</a>
-
-</div>
-</div>
-
-
-<!-- SERVICE 10 -->
-<div class="service-card">
-
-<img class="service-img"
-src="https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=900&q=80"
-alt="AC water leakage repair">
-
-<div class="service-body">
-
-<div class="service-icon">💧</div>
-
-<h3>Water Leakage</h3>
-
-<p>
-Diagnosis of indoor water leakage, drain blockage
-and drainage-related problems.
-</p>
-
-<a class="book-btn"
-href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20my%20AC%20has%20a%20water%20leakage%20problem.%20I%20want%20to%20book%20a%20service."
-target="_blank">
-Book Leakage Service
-</a>
-
-</div>
-</div>
-
-
-<!-- SERVICE 11 -->
-<div class="service-card">
-
-<img class="service-img"
-src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=900&q=80"
-alt="AC cooling repair">
-
-<div class="service-body">
-
-<div class="service-icon">❄️</div>
-
-<h3>Cooling Problem</h3>
-
-<p>
-AC not cooling? Get proper checking of airflow,
-filters, coils, gas and system operation.
-</p>
-
-<a class="book-btn"
-href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20my%20AC%20is%20not%20cooling.%20I%20want%20to%20book%20a%20checking."
-target="_blank">
-Book Cooling Check
-</a>
-
-</div>
-</div>
-
-
-<!-- SERVICE 12 -->
-<div class="service-card">
-
-<img class="service-img"
-src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80"
-alt="AC maintenance">
-
-<div class="service-body">
-
-<div class="service-icon">🛠️</div>
-
-<h3>AC Maintenance</h3>
-
-<p>
-Regular maintenance for better reliability,
-cleanliness and AC performance.
-</p>
-
-<a class="book-btn"
-href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20AC%20Maintenance."
-target="_blank">
-Book Maintenance
-</a>
-
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-
-<!-- AC TYPES -->
-<section>
-
-<div class="container">
-
-<div class="section-title">
-<small>AC Types</small>
-<h2>We Service Different AC Systems</h2>
-<p>
-Professional service and repair for residential and
-commercial air-conditioning systems.
-</p>
-</div>
-
-<div class="types">
-
-<div class="type-card">
-<div class="emoji">❄️</div>
-<h3>Inverter AC</h3>
-<p>Service & Repair</p>
-</div>
-
-<div class="type-card">
-<div class="emoji">🌬️</div>
-<h3>Non-Inverter AC</h3>
-<p>Service & Repair</p>
-</div>
-
-<div class="type-card">
-<div class="emoji">🏠</div>
-<h3>Split AC</h3>
-<p>Installation & Service</p>
-</div>
-
-<div class="type-card">
-<div class="emoji">🪟</div>
-<h3>Window AC</h3>
-<p>Service & Repair</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- WORK GALLERY -->
-<section>
-
-<div class="container">
-
-<div class="section-title">
-<small>Our Work</small>
-<h2>AC Service & Repair Work</h2>
-<p>
-Professional AC maintenance, repair, cleaning and
-installation work.
-</p>
-</div>
-
-<div class="work-grid">
-
-<img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1000&q=85"
-alt="Technician servicing AC">
-
-<img src="https://images.unsplash.com/photo-1581092919535-7146ff1a5906?auto=format&fit=crop&w=1000&q=85"
-alt="AC technician repair">
-
-<img src="https://images.unsplash.com/photo-1597008641621-ceb9a5b1c3ef?auto=format&fit=crop&w=1000&q=85"
-alt="AC installation">
-
-<img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1000&q=85"
-alt="AC gas service">
-
-<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1000&q=85"
-alt="AC repair work">
-
-<img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=85"
-alt="AC maintenance">
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- WHY CHOOSE -->
-<section class="why">
-
-<div class="container">
-
-<div class="section-title">
-<small>Why Choose Us</small>
-<h2>Professional AC Service</h2>
-</div>
-
-<div class="why-grid">
-
-<div class="why-card">
-<strong>✔ Proper Diagnosis</strong>
-We check the AC problem before recommending the required service or repair.
-</div>
-
-<div class="why-card">
-<strong>✔ Inverter & Non-Inverter</strong>
-Service support for different types of residential AC systems.
-</div>
-
-<div class="why-card">
-<strong>✔ Complete AC Care</strong>
-Cleaning, maintenance, repair, installation and cooling problem checking.
-</div>
-
-<div class="why-card">
-<strong>✔ Professional Work</strong>
-Careful servicing and proper checking of AC components.
-</div>
-
-<div class="why-card">
-<strong>✔ Multiple AC Types</strong>
-Split AC and Window AC service and repair support.
-</div>
-
-<div class="why-card">
-<strong>✔ Easy Booking</strong>
-Choose your service and book directly through WhatsApp.
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- BOOKING -->
-<section class="booking">
-
-<div class="container">
-
-<h2>Need AC Service?</h2>
-
-<p>
-Choose the service you need and contact ANYSH AC SERVICES
-directly on WhatsApp for booking and availability.
-</p>
-
-<a class="big-whatsapp"
-href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20an%20AC%20service.%20Please%20share%20availability."
-target="_blank">
-💬 BOOK AC SERVICE ON WHATSAPP
-</a>
-
-</div>
-
-</section>
-
-
-<!-- FAQ -->
-<section>
-
-<div class="container">
-
-<div class="section-title">
-<small>FAQ</small>
-<h2>Frequently Asked Questions</h2>
-</div>
-
-<div class="faq">
-
-<details>
-<summary>Do you service Inverter AC?</summary>
-<p>Yes. Inverter AC service, diagnosis and repair are available.</p>
-</details>
-
-<details>
-<summary>Do you service Non-Inverter AC?</summary>
-<p>Yes. Non-Inverter Split and Window AC service and repair are available.</p>
-</details>
-
-<details>
-<summary>Do you provide AC installation?</summary>
-<p>Yes. AC installation and related installation services are available.</p>
-</details>
-
-<details>
-<summary>Do you provide AC gas charging?</summary>
-<p>Gas checking and charging can be provided when required after proper diagnosis.</p>
-</details>
-
-<details>
-<summary>How can I book an AC service?</summary>
-<p>Click any “Book” button on this website. WhatsApp will open with your selected service message.</p>
-</details>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- FOOTER -->
-<footer>
-
-<div class="container">
-
-<div class="footer-grid">
-
-<div>
-<h3>ANYSH AC SERVICES</h3>
-<p>
-Professional AC Service, Repair, Installation &
-Maintenance.
-</p>
-<br>
-<p>📞 +91 82083 28370</p>
-</div>
-
-<div>
-<h3>Services</h3>
-<a href="#services">AC Service</a>
-<a href="#services">AC Repair</a>
-<a href="#services">AC Installation</a>
-<a href="#services">Gas Charging</a>
-<a href="#services">AC Cleaning</a>
-</div>
-
-<div>
-<h3>Contact</h3>
-
-<a href="tel:+918208328370">
-📞 Call Now
-</a>
-
-<a href="https://wa.me/918208328370"
-target="_blank">
-💬 WhatsApp
-</a>
-
-<a href="#services">
-🔧 Book Service
-</a>
-
-</div>
-
-</div>
-
-<div class="copyright">
-© 2026 ANYSH AC SERVICES. All Rights Reserved.
-</div>
-
-</div>
-
-</footer>
-
-
-<!-- MOBILE FIXED BUTTONS -->
-<div class="mobile-bar">
-
-<a class="mobile-call"
-href="tel:+918208328370">
-📞 CALL NOW
-</a>
-
-<a class="mobile-wa"
-href="https://wa.me/918208328370?text=Hello%20ANYSH%20AC%20SERVICES%2C%20I%20want%20to%20book%20an%20AC%20service.%20Please%20share%20availability."
-target="_blank">
-💬 WHATSAPP
-</a>
-
-</div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
   </html>
